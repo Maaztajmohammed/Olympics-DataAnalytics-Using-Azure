@@ -31,4 +31,12 @@ The transformed data is now ready to be loaded into a database/data warehouse an
 
 
 
-##
+## Lessons Learned : 
+I have learned some new things during the execution of this project.
+1. Got to know the process of copying multiple files one time from an external source using link of the github repository. Also extracted the name of the file from the information received through the file and concatenated the name with the base url to download the files.
+2. Used the foreach activity to loop through multiple files eliminating the need of executing the process repeatedly.
+3. Used the debug functionality of Azure Data Factory to debug the errors during the pipeline run which made the process seamless.
+4. Used App Registration to create an app and assigned 'role assignment' through IAM to the container so that synapse analytics can access the data and load it into the tables.
+5. Created Lake Database and loaded the transformed data from the data lake into this database.
+6. This whole process can be executed in the AZURE SYNAPSE ANALYTICS as it is a complete package of analytics servives but, I have used different services to explore how services are used and how can we execute
+a process in these services  
