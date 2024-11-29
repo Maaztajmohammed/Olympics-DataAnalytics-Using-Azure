@@ -3,6 +3,8 @@
 ## Overview
 This main goal of this project is to create a data pipeline to extract data of Tokyo Olympics, clean and transform it and store the data in a database or warehouse to get meaningful insights from it.
 
+
+
 ## Architecture
 ![Architecture](Tokyo_olympic_Architecture.png)
 
@@ -28,6 +30,9 @@ This Azure service is used as a platform for data tranformation. We need to crea
 
 ### 4. Azure Synapse Analytics : 
 The transformed data is now ready to be loaded into a database/data warehouse and hence Synapse analytics is used. Created a lake database and loaded the transformed data into the database by creating external tables. This can be further used for analysis by running SQL scripts over the database table to generate meaningful insights.
+
+
+
 
 
 
