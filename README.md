@@ -10,7 +10,7 @@ This main goal of this project is to create a data pipeline to extract data of T
 
 In the above architecture the tools used are as follows
 
-### 1. Azure Data Factory : 
+#### 1. Azure Data Factory : 
 This tool is used to extract the data from the external source and copy it to the data lake storage as raw data. Using this tool it becomes easier to execute this process as there is no                            coding invloved only we have to drang and drop the activities and configure it.
 
 Activities used :
@@ -22,13 +22,13 @@ b. ForEach Activity :  This activity is used for looping through the repository 
 
 c. Copy Data Activity : This activity is used to copy data from the external source to our Data Lake using the links from previous activity as input to extract the files.
 
-### 2. Azure Data Lake Storage :
+#### 2. Azure Data Lake Storage :
 This is used to create a data lake to store the extracted raw data as well as transformed data as a staging process before it being used for further analysis.
 
-### 3. Azure Databricks :  
+#### 3. Azure Databricks :  
 This Azure service is used as a platform for data tranformation. We need to create a compute cluster for computing the code and a notebook is also created where we can write our tranformation code and also test it. This notebook uses the cluster created as a computing resource.
 
-### 4. Azure Synapse Analytics : 
+#### 4. Azure Synapse Analytics : 
 The transformed data is now ready to be loaded into a database/data warehouse and hence Synapse analytics is used. Created a lake database and loaded the transformed data into the database by creating external tables. This can be further used for analysis by running SQL scripts over the database table to generate meaningful insights.
 
 
